@@ -18,9 +18,9 @@ public class ControlSound : MonoBehaviour
         retargetPressedButton = GameObject.FindWithTag("Player").GetComponent<RetargetPressedButton>();
         playMusic = GetComponent<AudioSource>();
 
-        if (!playMusic.isPlaying)
+        if (playMusic != null) 
         {
-            playMusic.clip = music[whatMusic];
+            playMusic.clip = music[whatMusic]; 
             playMusic.Play();
         }
     }
