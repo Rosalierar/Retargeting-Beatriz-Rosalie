@@ -41,7 +41,7 @@ public class ControlSound : MonoBehaviour
             playMusic.Play();
         }
     }
-    public void NameSound(int music) 
+    public void SoundLayers(int index) 
     {
     }
 }

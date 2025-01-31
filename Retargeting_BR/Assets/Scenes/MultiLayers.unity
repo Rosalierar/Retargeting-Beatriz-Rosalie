@@ -296,6 +296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Michelle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 61678e9fd94a44b4088412df250efed8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 61678e9fd94a44b4088412df250efed8, type: 3}
       propertyPath: m_Controller
       value: 
@@ -711,7 +715,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8cde762be6b3b443a660fb2f22a3045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: []
+  music:
+  - {fileID: 8300000, guid: 1ab524dd897ab44449c6472ab5c5d568, type: 3}
+  - {fileID: 8300000, guid: 191a82f98a07e4643ab45b0ce571266c, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playMusic: {fileID: 0}
   whatMusic: 0
 --- !u!1 &871241489
@@ -1140,6 +1149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kachujin
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1200,6 +1213,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 76917bb8da844bf4dbebd63b51c6f495, type: 3}
       propertyPath: m_Name
       value: minina
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 76917bb8da844bf4dbebd63b51c6f495, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 76917bb8da844bf4dbebd63b51c6f495, type: 3}
       propertyPath: m_Controller

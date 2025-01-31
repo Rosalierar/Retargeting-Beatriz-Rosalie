@@ -20,9 +20,11 @@ public class PanelScript : MonoBehaviour
     void AddButton(AnimatorControllerParameter parameter)
     {
         var button = Instantiate(botao, transform);
-        foreach (var tmpText in button.GetComponentsInChildren<TMP_Text>())
-            tmpText.text = parameter.name;
+
+        foreach (var tmpText in button.GetComponentsInChildren<TMP_Text>()) tmpText.text = parameter.name;
+
         Debug.Log("P: " + parameter.name);
+
         button.onClick.AddListener(() => anim.SetTrigger(parameter.nameHash));
     }
 }
