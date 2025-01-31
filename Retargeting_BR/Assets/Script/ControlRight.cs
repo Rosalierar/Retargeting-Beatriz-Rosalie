@@ -1,18 +1,38 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ControlRight : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Animator animator;
+    public void ChangeDance(int index)
     {
-        
-    }
+        GameObject characterObject = GameObject.Find("Idle");
+        animator = characterObject.GetComponent<Animator>();
+        int indexcamada = (2 * index) - 1;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        indexcamada = indexcamada == -1 ? 0 : indexcamada;
+
+        Debug.Log("Iniciou mudança RW weight");
+
+        for (int i = 0; i < animator.layerCount; i++)
+        {
+            if (i % 2 != 0)
+            {
+                if (indexcamada == i || i == 0)
+                {
+                    animator.SetLayerWeight(i, 1);
+                    Debug.Log("AW Mudou peso para 1. Camada:" + i);
+                }
+                else
+                {
+                    animator.SetLayerWeight(i, 0);
+                    Debug.Log("AW Mudou peso para 0. Camada:" + i);
+                }
+            }
+        }
+        Debug.Log("Terminou mudança RW weight");
+
     }
 }
