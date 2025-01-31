@@ -1,11 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEditor.Animations;
-using TMPro;
 
-public class MultiLayers : MonoBehaviour
+public class ControlLeft : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
