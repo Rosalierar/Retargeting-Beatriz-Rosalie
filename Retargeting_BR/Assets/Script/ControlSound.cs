@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,6 +7,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class ControlSound : MonoBehaviour
 {
+    PanelScript painelScript;
     RetargetPressedButton retargetPressedButton;
 
     public AudioClip[] music;
@@ -16,6 +18,8 @@ public class ControlSound : MonoBehaviour
     void Start()
     {
         retargetPressedButton = GameObject.FindWithTag("Player").GetComponent<RetargetPressedButton>();
+        painelScript = GameObject.Find("DropdownLeft").GetComponent<PanelScript>();
+
         playMusic = GetComponent<AudioSource>();
 
         if (playMusic != null) 
@@ -41,7 +45,8 @@ public class ControlSound : MonoBehaviour
             playMusic.Play();
         }
     }
-    public void SoundLayers(int index) 
+    public void SoundLayers(int tf)
     {
+       //if (tf = painelScript.layerDropdown.options[tf].text) { }
     }
 }
