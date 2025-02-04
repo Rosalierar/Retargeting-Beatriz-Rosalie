@@ -63,14 +63,14 @@ public class MultiLayers : MonoBehaviour
     {
         // Chama a função ChangeDance para o lado direito
         ControlRight controlRightScript = GameObject.Find("Kachujin").GetComponent<ControlRight>();
-        controlRightScript.ChangeDance(index + 1);  // index + 1, pois os dropdowns geralmente começam no índice 0
+        controlRightScript.ChangeDance(index);  // index + 1, pois os dropdowns geralmente começam no índice 0
     }
 
     void OnLeftDropdownChanged(int index)
     {
         // Chama a função ChangeDance para o lado esquerdo
         ControlLeft controlLeftScript = GameObject.Find("Kachujin").GetComponent<ControlLeft>();
-        controlLeftScript.ChangeDance(index + 1);  // index + 1
+        controlLeftScript.ChangeDance(index);  // index + 1
     }
 }
 

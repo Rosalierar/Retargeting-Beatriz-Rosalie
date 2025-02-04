@@ -6,6 +6,7 @@ using UnityEngine;
 public class ControlRight : MonoBehaviour
 {
     Animator animator;
+
     public void ChangeDance(int index)
     {
         GameObject characterObject = GameObject.Find("Kachujin");
@@ -20,7 +21,7 @@ public class ControlRight : MonoBehaviour
         {
             if (i == 0 || i % 2 != 0) //impares
             {
-                if (indexcamada == i || i == 0)
+                if (indexcamada == i)
                 {
                     animator.SetLayerWeight(i, 1);
                     Debug.Log("AW Mudou peso para 1. Camada:" + i);
