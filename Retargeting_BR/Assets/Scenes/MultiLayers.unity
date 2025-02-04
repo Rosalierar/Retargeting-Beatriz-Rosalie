@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!95 &57317973 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
-  m_PrefabInstance: {fileID: 1945888737}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &87476115
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +520,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 61678e9fd94a44b4088412df250efed8, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
+      objectReference: {fileID: 9100000, guid: 4e7d11aac345e7a45a2f1210f4d4656d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1657,10 +1652,6 @@ GameObject:
   - component: {fileID: 930343156}
   - component: {fileID: 930343155}
   - component: {fileID: 930343154}
-  - component: {fileID: 930343159}
-  - component: {fileID: 930343160}
-  - component: {fileID: 930343161}
-  - component: {fileID: 930343162}
   m_Layer: 5
   m_Name: DropdownLeft
   m_TagString: Untagged
@@ -1788,72 +1779,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930343152}
   m_CullTransparentMesh: 1
---- !u!114 &930343159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930343152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d19b7f530e73574fae32dd859fcb462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 57317973}
-  dropdownrw: {fileID: 2084530621}
-  dropdownlw: {fileID: 930343154}
---- !u!95 &930343160
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930343152}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &930343161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930343152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a9abafde57b954c850125deb439323, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audiosource: {fileID: 0}
---- !u!114 &930343162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930343152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8e3e89be3043ca449e7c68beff5d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 57317973}
-  layerDropdown: {fileID: 930343154}
-  text: {fileID: 1332847819}
-  nameOfLayers: 
-  whatDropdownIs: 0
 --- !u!1 &971388554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4325,7 +4250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
       propertyPath: m_Name
-      value: Idle
+      value: Kachujin
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
       propertyPath: m_TagString
@@ -4334,7 +4259,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
+      objectReference: {fileID: 9100000, guid: 4e7d11aac345e7a45a2f1210f4d4656d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4474,7 +4399,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 76917bb8da844bf4dbebd63b51c6f495, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
+      objectReference: {fileID: 9100000, guid: 4e7d11aac345e7a45a2f1210f4d4656d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4491,11 +4416,8 @@ GameObject:
   - component: {fileID: 2084530619}
   - component: {fileID: 2084530623}
   - component: {fileID: 2084530622}
-  - component: {fileID: 2084530621}
-  - component: {fileID: 2084530624}
   - component: {fileID: 2084530625}
-  - component: {fileID: 2084530626}
-  - component: {fileID: 2084530627}
+  - component: {fileID: 2084530621}
   m_Layer: 5
   m_Name: DropdownRight
   m_TagString: Idle
@@ -4623,21 +4545,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084530618}
   m_CullTransparentMesh: 1
---- !u!114 &2084530624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084530618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d19b7f530e73574fae32dd859fcb462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 57317973}
-  dropdownrw: {fileID: 2084530621}
-  dropdownlw: {fileID: 930343154}
 --- !u!114 &2084530625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4650,44 +4557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f445cb425c43146a9f2c9caf5f45ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &2084530626
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084530618}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2084530627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084530618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8e3e89be3043ca449e7c68beff5d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 57317973}
-  layerDropdown: {fileID: 2084530621}
-  text: {fileID: 1395656501}
-  nameOfLayers: 
-  whatDropdownIs: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
