@@ -15,8 +15,7 @@ public class MultiLayers : MonoBehaviour
     void Start()
     {
         GameObject characterObject = GameObject.Find("Idle");
-        animator =
-        characterObject.GetComponent<Animator>();
+        animator = characterObject.GetComponent<Animator>();
         NamesOfDropdowns();
     }
 
