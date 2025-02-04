@@ -10,7 +10,7 @@ using System.Data.Common;
 public class PanelScript : MonoBehaviour
 {
     [SerializeField] Animator animator;
-    [SerializeField] Button botao;
+    //[SerializeField] Button botao;
     [SerializeField] TMP_Dropdown layerDropdown;
 
     [SerializeField] TMP_Text text;

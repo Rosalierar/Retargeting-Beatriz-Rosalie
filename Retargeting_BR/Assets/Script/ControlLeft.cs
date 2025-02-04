@@ -12,7 +12,7 @@ public class ControlLeft : MonoBehaviour
     {
         GameObject characterObject1 = GameObject.Find("Canvas");
         audiosource = characterObject1.GetComponent<AudioSource>();
-        GameObject characterObject2 = GameObject.Find("Idle");
+        GameObject characterObject2 = GameObject.Find("Kachujin");
         animator = characterObject2.GetComponent<Animator>();
         int indexcamada = (2 * index);
         string danceName; string dirName;
@@ -25,7 +25,7 @@ public class ControlLeft : MonoBehaviour
                 {
                     animator.SetLayerWeight(i, 1);
                     danceName = animator.GetLayerName(i);
-                    danceName = danceName.Substring(0, danceName.IndexOf(' '));
+                    //danceName = danceName.Substring(0, danceName.IndexOf(' '));
                     dirName = "Sounds/" + danceName;
                     audiosource.clip = Resources.Load<AudioClip>(dirName);
                     Debug.Log(audiosource.clip);

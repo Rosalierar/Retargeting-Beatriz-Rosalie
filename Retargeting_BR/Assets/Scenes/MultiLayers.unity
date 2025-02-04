@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!95 &57317973 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
-  m_PrefabInstance: {fileID: 1945888737}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &87476115
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +520,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 61678e9fd94a44b4088412df250efed8, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
+      objectReference: {fileID: 9100000, guid: 4e7d11aac345e7a45a2f1210f4d4656d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -705,6 +700,7 @@ GameObject:
   - component: {fileID: 559548624}
   - component: {fileID: 559548623}
   - component: {fileID: 559548622}
+  - component: {fileID: 559548626}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -798,6 +794,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &559548626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559548621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d19b7f530e73574fae32dd859fcb462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1520861321}
+  dropdownrw: {fileID: 2084530621}
+  dropdownlw: {fileID: 930343154}
 --- !u!1 &628749622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,7 +1203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &752282767
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1656,7 +1667,6 @@ GameObject:
   - component: {fileID: 930343153}
   - component: {fileID: 930343156}
   - component: {fileID: 930343155}
-  - component: {fileID: 930343157}
   - component: {fileID: 930343154}
   m_Layer: 5
   m_Name: DropdownLeft
@@ -1785,24 +1795,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930343152}
   m_CullTransparentMesh: 1
---- !u!114 &930343157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930343152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8e3e89be3043ca449e7c68beff5d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  botao: {fileID: 0}
-  layerDropdown: {fileID: 930343154}
-  text: {fileID: 1332847819}
-  nameOfLayers: 
-  whatDropdownIs: 2
 --- !u!1 &971388554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,6 +3123,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415090256}
   m_CullTransparentMesh: 1
+--- !u!1 &1520861320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
+  m_PrefabInstance: {fileID: 1945888737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1520861321 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
+  m_PrefabInstance: {fileID: 1945888737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1520861323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520861320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a9abafde57b954c850125deb439323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audiosource: {fileID: 776300722}
+--- !u!114 &1520861324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520861320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f445cb425c43146a9f2c9caf5f45ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1550024004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4283,11 +4310,17 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
+      objectReference: {fileID: 9100000, guid: 4e7d11aac345e7a45a2f1210f4d4656d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520861324}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520861323}
   m_SourcePrefab: {fileID: 100100000, guid: 3dd575ecd561a464d862c24d496214b7, type: 3}
 --- !u!1 &1979468862
 GameObject:
@@ -4423,7 +4456,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 76917bb8da844bf4dbebd63b51c6f495, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e17c34e67896cec429eabe8873cfa0b3, type: 2}
+      objectReference: {fileID: 9100000, guid: 4e7d11aac345e7a45a2f1210f4d4656d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4440,12 +4473,11 @@ GameObject:
   - component: {fileID: 2084530619}
   - component: {fileID: 2084530623}
   - component: {fileID: 2084530622}
+  - component: {fileID: 2084530625}
   - component: {fileID: 2084530621}
-  - component: {fileID: 2084530620}
-  - component: {fileID: 2084530624}
   m_Layer: 5
   m_Name: DropdownRight
-  m_TagString: Untagged
+  m_TagString: Idle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4472,24 +4504,6 @@ RectTransform:
   m_AnchoredPosition: {x: 621.4, y: 380}
   m_SizeDelta: {x: 400, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2084530620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084530618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8e3e89be3043ca449e7c68beff5d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  botao: {fileID: 0}
-  layerDropdown: {fileID: 2084530621}
-  text: {fileID: 1395656501}
-  nameOfLayers: 
-  whatDropdownIs: 1
 --- !u!114 &2084530621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4588,21 +4602,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084530618}
   m_CullTransparentMesh: 1
---- !u!114 &2084530624
+--- !u!114 &2084530625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084530618}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d19b7f530e73574fae32dd859fcb462, type: 3}
+  m_Script: {fileID: 11500000, guid: f5f445cb425c43146a9f2c9caf5f45ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 57317973}
-  dropdownrw: {fileID: 2084530621}
-  dropdownlw: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
