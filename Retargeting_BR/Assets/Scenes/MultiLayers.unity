@@ -1197,6 +1197,7 @@ GameObject:
   - component: {fileID: 752282770}
   - component: {fileID: 752282769}
   - component: {fileID: 752282768}
+  - component: {fileID: 752282771}
   m_Layer: 5
   m_Name: DropdownMusic
   m_TagString: Untagged
@@ -1340,6 +1341,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752282766}
   m_CullTransparentMesh: 1
+--- !u!114 &752282771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752282766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cde762be6b3b443a660fb2f22a3045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music:
+  - {fileID: 8300000, guid: 1ab524dd897ab44449c6472ab5c5d568, type: 3}
+  - {fileID: 8300000, guid: 191a82f98a07e4643ab45b0ce571266c, type: 3}
+  - {fileID: 8300000, guid: e10ce39448e61d34ab1bfb4029860640, type: 3}
+  - {fileID: 8300000, guid: c1d840e0c36bcb3438775b06cdc50eda, type: 3}
+  - {fileID: 8300000, guid: e69fc7ba49cd35c4884596e336cbe98d, type: 3}
+  playMusic: {fileID: 0}
+  whatMusic: 0
 --- !u!1 &776300720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,9 +1505,9 @@ MonoBehaviour:
   music:
   - {fileID: 8300000, guid: 1ab524dd897ab44449c6472ab5c5d568, type: 3}
   - {fileID: 8300000, guid: 191a82f98a07e4643ab45b0ce571266c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: e10ce39448e61d34ab1bfb4029860640, type: 3}
+  - {fileID: 8300000, guid: c1d840e0c36bcb3438775b06cdc50eda, type: 3}
+  - {fileID: 8300000, guid: e69fc7ba49cd35c4884596e336cbe98d, type: 3}
   playMusic: {fileID: 0}
   whatMusic: 0
 --- !u!1 &868744739
