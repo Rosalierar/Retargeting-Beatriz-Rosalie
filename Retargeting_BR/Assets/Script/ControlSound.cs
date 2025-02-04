@@ -25,7 +25,8 @@ public class ControlSound : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-        playMusic = GetComponent<AudioSource>();
+        //playMusic = GetComponent<AudioSource>();
+        playMusic = GameObject.FindWithTag("SoundController").GetComponent<AudioSource>();
 
         if (playMusic != null) 
         {
