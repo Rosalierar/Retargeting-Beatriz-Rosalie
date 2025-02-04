@@ -21,21 +21,23 @@ public class ControlLeft : MonoBehaviour
         for (int i = 0; i < animator.layerCount; i++)
         {
             if (i % 2 == 0) // pares
+            {
                 if (indexcamada == i)
                 {
                     animator.SetLayerWeight(i, 1);
                     danceName = animator.GetLayerName(i);
                     //danceName = danceName.Substring(0, danceName.IndexOf(' '));
-                    dirName = "Sounds/" + danceName;
+                    /*dirName = "Sounds/" + danceName;
                     audiosource.clip = Resources.Load<AudioClip>(dirName);
                     Debug.Log(audiosource.clip);
                     audiosource.Play();
-                    Debug.Log("AudioClip: " + dirName);
+                    Debug.Log("AudioClip: " + dirName);*/
                 }
                 else
                 {
                     animator.SetLayerWeight(i, 0);
                 }
+            }
         }
         Debug.Log("Terminou mudança LW weight");
     }
