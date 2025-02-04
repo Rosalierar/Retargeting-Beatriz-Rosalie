@@ -8,7 +8,7 @@ public class ControlRight : MonoBehaviour
     Animator animator;
     public void ChangeDance(int index)
     {
-        GameObject characterObject = GameObject.Find("Idle");
+        GameObject characterObject = GameObject.Find("Kachujin");
         animator = characterObject.GetComponent<Animator>();
         int indexcamada = (2 * index) - 1;
 
@@ -18,7 +18,7 @@ public class ControlRight : MonoBehaviour
 
         for (int i = 0; i < animator.layerCount; i++)
         {
-            if (i % 2 != 0)
+            if (i == 0 || i % 2 != 0) //impares
             {
                 if (indexcamada == i || i == 0)
                 {
