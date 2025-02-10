@@ -11,6 +11,7 @@ public class ControlRight : MonoBehaviour
     {
         GameObject characterObject = GameObject.Find("Kachujin");
         animator = characterObject.GetComponent<Animator>();
+
         int indexcamada = (2 * index) - 1;
 
         indexcamada = indexcamada == -1 ? 0 : indexcamada;
